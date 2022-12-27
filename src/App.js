@@ -11,13 +11,13 @@ function App() {
     <div className="content">
       <div className="left">
         <HomePage />
-        <EmployeePage />
-        <Header />
         <SearchBar />
-      </div>
-      <div className="right">
         <EmployeeList />
         <EmployeeListItem />
+      </div>
+      <div className="right">
+        <EmployeePage />
+        <Header />
       </div>
     </div>
   );
