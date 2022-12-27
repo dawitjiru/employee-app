@@ -10,7 +10,7 @@ import EmployeeListItem from './components/EmployeeListItem';
 function App() {
   return (
     <div className="App">
-    <h2> Hello from react</h2>
+    <h2> Hellooooo from react</h2>
     <HomePage />
     <EmployeePage />
     <Header />
