@@ -1,5 +1,5 @@
 function Header() {
-    return <div> <h3> Header</h3></div>;
+    return <div> <h3> Employee Directory</h3></div>;
   }
 
   export default Header;

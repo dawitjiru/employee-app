@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="content">
       <div className="left">
-        <HomePage />
+        <Header />
         <SearchBar />
         <EmployeeList />
         <EmployeeListItem />

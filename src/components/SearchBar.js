@@ -1,5 +1,5 @@
 function SearchBar() {
-    return <div> <h3> SearchBar</h3></div>;
+    return <div><input type="search" placeholder="Employee Search"/></div>;
   }
 
   export default SearchBar;
