@@ -1,5 +1,10 @@
 function EmployeePage() {
-    return <div> <h3> EmployeePage</h3></div>;
-  }
+  return (
+    <div className="left">
+      {" "}
+      <h3> EmployeePage</h3>
+    </div>
+  );
+}
 
-  export default EmployeePage;
+export default EmployeePage;

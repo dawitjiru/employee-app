@@ -4,6 +4,7 @@ import imageOne from "./assets/images/image_one.png";
 import imageTwo from "./assets/images/image_two.png";
 import imageThree from "./assets/images/image_three.png";
 import EmployeePage from "./components/EmployeePage";
+import { useEffect, useState } from "react";
 
 function App() {
   const employees = [
@@ -37,13 +38,16 @@ function App() {
     },
   ];
   return (
-    <div>
+    <div className="content">
       <HomePage employees={employees} />
       <EmployeePage />
-      {/*  */}
     </div>
   );
 }
 
+const [employees, setEmployees] = useState([]);
+useEffect(()=> {
+  fetch``
+})
 
 export default App;
