@@ -16,7 +16,6 @@ function App() {
       });
   }, []);
   console.log("employees", employees);
-
   return (
     <div className="content">
       <div className="left">
