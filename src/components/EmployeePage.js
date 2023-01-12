@@ -1,7 +1,6 @@
 function EmployeePage() {
   return (
-    <div className="left">
-      {" "}
+    <div>
       <h3> EmployeePage</h3>
     </div>
   );

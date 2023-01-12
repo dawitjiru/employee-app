@@ -3,23 +3,27 @@
 }
 
 .content {
+  background-color: blueviolet;
   display: flex;
   flex-wrap: row;
   text-align: center;
+  margin-top: 1%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 .left {
   background-color: #3a90f3;
   padding: 10px;
   flex: 50%;
-  text-align: left;
+  text-align: auto;
 }
 
 .right {
   background-color: rgb(21, 166, 171);
   padding: 10px;
   flex: 50%;
-  text-align: left;
+  text-align: auto;
 }
 
 /* Responsive layout */

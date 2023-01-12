@@ -1,16 +1,9 @@
-import "./../main.css";
-import Header from "./Header";
-import SearchBar from "./SearchBar";
-import EmployeeList from "./EmployeeList";
-
-function HomePage(props) {
-  console.log(props);
+function HomePage() {
   return (
-    <div className="right">
-      <Header />
-      <SearchBar />
-      <EmployeeList employees={props.employees} />
+    <div>
+      <h3> HomePage</h3>
     </div>
   );
 }
+
 export default HomePage;
