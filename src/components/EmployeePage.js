@@ -1,6 +1,7 @@
+import "../main.css";
 function EmployeePage() {
   return (
-    <div>
+    <div className="right">
       <h3> EmployeePage</h3>
     </div>
   );
