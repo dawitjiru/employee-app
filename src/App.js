@@ -18,8 +18,8 @@ function App() {
   return (
     <div>
       <Wrapper>
-        <HomePage />
-        <EmployeePage />
+        <HomePage employees={employees} />
+        <EmployeePage employees={employees} />
       </Wrapper>
     </div>
   );

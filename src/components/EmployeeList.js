@@ -1,10 +1,14 @@
 import EmployeeListItem from "./EmployeeListItem";
-function EmployeeList({ employees }) {
-  return (
-    <div>
-      <h3>Employee list goes here</h3>
-      <EmployeeListItem />
-    </div>
-  );
-}
+const EmployeeList = (props) => {
+  return props.employees.map(({ image, name, occupation }, index) => {
+    return (
+      <EmployeeListItem
+        key={index}
+        image={image}
+        name={name}
+        title={occupation}
+      />
+    );
+  });
+};
 export default EmployeeList;
