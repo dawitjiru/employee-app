@@ -14,7 +14,7 @@ function App() {
         if (data) setEmployees(data);
       });
   }, []);
-  console.log("employees", employees);
+  // console.log("employees", employees);
   return (
     <div>
       <Wrapper>
@@ -24,4 +24,5 @@ function App() {
     </div>
   );
 }
+
 export default App;

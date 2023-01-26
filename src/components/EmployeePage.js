@@ -1,11 +1,17 @@
 import "../main.css";
-function EmployeePage(props) {
-  return (
-    <div className="right">
-      <h3> EmployeePage</h3>
-      <h2> {props.name}</h2>
-    </div>
-  );
-}
+import EmployeeDetail from "./EmployeeDetail";
+import Header from "./Header";
+const EmployeePage = (props) => {
+  return props.employees.map(({ image, name, occupation }, index) => {
+    return (
+      <EmployeeDetail
+        key={index}
+        image={image}
+        name={name}
+        title={occupation}
+      />
+    );
+  });
+};
 
 export default EmployeePage;

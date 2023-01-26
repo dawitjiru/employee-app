@@ -1,6 +1,6 @@
-const EmployeeListItem = ({ image, name, occupation, onClick }) => {
+const EmployeeListItem = ({ image, name, occupation }) => {
   return (
-    <div style={styledEmployeeListItem} onClick={onClick}>
+    <div style={styledEmployeeListItem}>
       <img style={styledImage} src={image} alt={image} />
       <div>
         <h3 style={{ margin: "0" }}>{name}</h3>
