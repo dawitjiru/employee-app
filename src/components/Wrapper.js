@@ -5,7 +5,7 @@ const Wrapper = (props) => {
   return (
     <div style={styledWrapper}>
       {props.children}
-      {/* <HomePage /> <EmployeePage /> */}
+      
     </div>
   );
 };

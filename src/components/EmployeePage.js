@@ -4,12 +4,15 @@ import Header from "./Header";
 const EmployeePage = (props) => {
   return props.employees.map(({ image, name, occupation }, index) => {
     return (
-      <EmployeeDetail
-        key={index}
-        image={image}
-        name={name}
-        title={occupation}
-      />
+      <div>
+        <Header />
+        <EmployeeDetail
+          key={index}
+          image={image}
+          name={name}
+          title={occupation}
+        />
+      </div>
     );
   });
 };
