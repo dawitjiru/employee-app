@@ -14,7 +14,7 @@ function App() {
         if (data) setEmployees(data);
       });
   }, []);
-  // console.log("employees", employees);
+
   return (
     <div>
       <Wrapper>

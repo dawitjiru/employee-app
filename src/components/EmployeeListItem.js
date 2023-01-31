@@ -1,11 +1,17 @@
-const EmployeeListItem = ({ image, name, occupation }) => {
+const EmployeeListItem = ({ index, image, name, occupation }) => {
+  const handleEmployeeDetail = () => {
+    console.log(name);
+  };
   return (
-    <div style={styledEmployeeListItem}>
+    <div
+      key={index}
+      style={styledEmployeeListItem}
+      onClick={handleEmployeeDetail}
+    >
       <img style={styledImage} src={image} alt={image} />
-      <div>
-        <h3 style={{ margin: "0" }}>{name}</h3>
-        <p style={{ margin: "0" }}>{occupation}</p>
-      </div>
+
+      <h3 style={{ margin: "0" }}>{name}</h3>
+      <p style={{ margin: "0" }}>{occupation}</p>
     </div>
   );
 };
