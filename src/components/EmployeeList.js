@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import EmployeeListItem from "./EmployeeListItem";
 const EmployeeList = (props) => {
   return props.employees.map(({ image, name, occupation }, index) => {

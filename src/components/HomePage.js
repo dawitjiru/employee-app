@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import "../main.css";
 import Header from "./Header";
 import SearchBar from "./SearchBar";

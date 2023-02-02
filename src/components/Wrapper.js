@@ -1,13 +1,9 @@
+import React, { Component } from "react";
 import EmployeePage from "./EmployeePage";
 import HomePage from "./HomePage";
 
 const Wrapper = (props) => {
-  return (
-    <div style={styledWrapper}>
-      {props.children}
-      
-    </div>
-  );
+  return <div style={styledWrapper}>{props.children}</div>;
 };
 const styledWrapper = {
   //border:'2px solid red',

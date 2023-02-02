@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 const EmployeeDetail = ({ image, name, occupation }) => {
   return (
     <div>

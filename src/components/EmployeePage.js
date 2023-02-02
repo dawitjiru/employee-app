@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import "../main.css";
 import EmployeeDetail from "./EmployeeDetail";
 import Header from "./Header";
