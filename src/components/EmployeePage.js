@@ -1,21 +1,14 @@
-import React, { Component } from "react";
+import React, { useState, Component } from "react";
 import "../main.css";
 import EmployeeDetail from "./EmployeeDetail";
 import Header from "./Header";
 const EmployeePage = (props) => {
-  return props.employees.map(({ image, name, occupation }, index) => {
-    return (
-      <div>
-        <Header />
-        <EmployeeDetail
-          key={index}
-          image={image}
-          name={name}
-          title={occupation}
-        />
-      </div>
-    );
-  });
+  return (
+    <div className="right">
+      <Header />
+      <EmployeeDetail />
+    </div>
+  );
 };
 
 export default EmployeePage;

@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { useState, Component } from "react";
 const EmployeeListItem = ({ index, image, name, occupation }) => {
   const handleEmployeeDetail = () => {
     console.log(name);

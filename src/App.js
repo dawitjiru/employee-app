@@ -1,3 +1,4 @@
+import LogRocket from "logrocket";
 // import "./main.css";
 import Wrapper from "./components/Wrapper";
 import React from "react";
@@ -6,6 +7,7 @@ import HomePage from "./components/HomePage";
 import { useEffect, useState } from "react";
 
 function App() {
+  LogRocket.init("vglvoq/mukera");
   const [employees, setEmployees] = useState([]);
   useEffect(() => {
     fetch("https://lit-dusk-21328.herokuapp.com/api/employees/allemployees")
@@ -14,12 +16,12 @@ function App() {
         if (data) setEmployees(data);
       });
   }, []);
-
+  const [employeeDetail, setEmployeeDetail] = useState(employees[0]);
   return (
     <div>
       <Wrapper>
-        <HomePage employees={employees} />
-        <EmployeePage employees={employees} />
+        <HomePage setEmployeeDetail={setEmployeeDetail} employees={employees} />
+        <EmployeePage employeeDetail={employeeDetail} employees={employees} />
       </Wrapper>
     </div>
   );
