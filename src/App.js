@@ -1,6 +1,7 @@
 import LogRocket from "logrocket";
 // import "./main.css";
 import Wrapper from "./components/Wrapper";
+import { MenuBar } from "./components/Wrapper";
 import React from "react";
 import EmployeePage from "./components/EmployeePage";
 import HomePage from "./components/HomePage";
@@ -19,6 +20,7 @@ function App() {
   const [employeeDetail, setEmployeeDetail] = useState(employees[0]);
   return (
     <div>
+      <MenuBar />
       <Wrapper>
         <HomePage setEmployeeDetail={setEmployeeDetail} employees={employees} />
         <EmployeePage employeeDetail={employeeDetail} employees={employees} />
