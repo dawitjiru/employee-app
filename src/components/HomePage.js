@@ -8,7 +8,7 @@ function HomePage(props) {
     <div className="left">
       <Header />
       <SearchBar />
-      <EmployeeList employees={props.employees} />
+      <EmployeeList setEmployeeDetail={props.setEmployeeDetail} employees={props.employees} />
     </div>
   );
 }

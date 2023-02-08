@@ -10,14 +10,17 @@ import { useEffect, useState } from "react";
 function App() {
   LogRocket.init("vglvoq/mukera");
   const [employees, setEmployees] = useState([]);
+  const [employeeDetail, setEmployeeDetail] = useState({});
+
   useEffect(() => {
     fetch("https://lit-dusk-21328.herokuapp.com/api/employees/allemployees")
       .then((res) => res.json())
       .then((data) => {
         if (data) setEmployees(data);
+        setEmployeeDetail(data[0]);
       });
   }, []);
-  const [employeeDetail, setEmployeeDetail] = useState(employees[0]);
+
   return (
     <div>
       <MenuBar />

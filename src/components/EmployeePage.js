@@ -6,7 +6,7 @@ const EmployeePage = (props) => {
   return (
     <div className="right">
       <Header />
-      <EmployeeDetail />
+      <EmployeeDetail employeeDetail={props.employeeDetail} />
     </div>
   );
 };

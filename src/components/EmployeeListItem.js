@@ -1,15 +1,20 @@
 import React, { useState, Component } from "react";
-const EmployeeListItem = ({ index, image, name, occupation }) => {
-  const handleEmployeeDetail = () => {
-    console.log(name);
-  };
+const EmployeeListItem = ({
+  index,
+  image,
+  name,
+  occupation,
+  setEmployeeDetail,
+  employees,
+}) => {
+  const handleEmployeeDetail = () => {};
   return (
     <div
       key={index}
       style={styledEmployeeListItem}
-      onClick={handleEmployeeDetail}
+      onClick={() => setEmployeeDetail(employees[index])}
     >
-      <img style={styledImage} src={image} alt={image} />
+      <img style={styledImage} src={image} />
 
       <h3 style={{ margin: "0" }}>{name}</h3>
       <p style={{ margin: "0" }}>{occupation}</p>
